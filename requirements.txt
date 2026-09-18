@@ -1,0 +1,5 @@
+# Dependências do ambiente base do minicurso.
+# Instale com: pip install -r requirements.txt
+
+Django==5.2.17
+python-dotenv==1.2.3

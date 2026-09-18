@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}{{ minicurso.titulo }}{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">{{ minicurso.instituicao }}</p>
+  <h1>{{ minicurso.titulo }}</h1>
+  <p class="subtitle">{{ minicurso.subtitulo }}</p>
+
+  <p class="status" id="status" data-status="Ambiente base pronto para o desenvolvimento com SDD.">
+    Carregando…
+  </p>
+</section>
+
+<section class="cards">
+  <article class="card">
+    <h2>1. Ambiente</h2>
+    <p>
+      Django + HTML, CSS e JavaScript já configurados. Rode o servidor local e
+      confirme que esta página abre na sua máquina.
+    </p>
+  </article>
+
+  <article class="card">
+    <h2>2. Specs</h2>
+    <p>
+      As especificações do sistema ficarão na pasta <code>docs/</code>, em
+      arquivos Markdown, e serão o ponto de partida do desenvolvimento.
+    </p>
+  </article>
+
+  <article class="card">
+    <h2>3. Desenvolvimento</h2>
+    <p>
+      A partir das specs, construiremos a plataforma Web usando
+      <strong>SDD — Spec Driven Development</strong>.
+    </p>
+  </article>
+</section>
+{% endblock %}
